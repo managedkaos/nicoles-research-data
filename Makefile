@@ -14,3 +14,9 @@ download-zip-files:
 		--no-parent \
 		--accept=.zip \
 		--execute robots=off
+
+requirements:
+	/usr/bin/env pip install -r requirements.txt
+
+list-zip-files:
+	/usr/bin/env python list-zip-files.py | tee MAUDE_Data.md
