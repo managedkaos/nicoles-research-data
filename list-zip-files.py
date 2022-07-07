@@ -21,5 +21,8 @@ df.columns = [
     'Description'
 ]
 
+# Convert total records to integer
+df = df.astype({'Total Records':'int'})
+
 # Print the table as markdown
 print(df.to_markdown())
