@@ -2,6 +2,8 @@ URL=https://www.fda.gov/medical-devices/mandatory-reporting-requirements-manufac
 
 download-zip-files:
 	wget $(URL) \
+		--quiet \
+		--show-progress \
 		--directory-prefix=Data \
 		--recursive \
 		--level=1 \
